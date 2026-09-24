@@ -34,7 +34,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Liiift-Studio/sanity-typeface-fields.git"
+    "url": "git+https://github.com/over-punch/sanity-typeface-fields.git"
   },
   "peerDependencies": {
     "sanity": ">=3 <7"
