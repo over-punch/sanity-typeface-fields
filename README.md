@@ -219,7 +219,7 @@ Sibling packages in this suite (`sanity-key-value-input`, `sanity-nested-object-
 
 ### Verification status
 
-v3 – v6 support is established by the single `sanity` peer range, green builds, and the [Vitest suite](#testing) covering `createStateField`. Beyond that, these fields are in use in **three in-house Studios**. They have **not** been broadly tested in a running Sanity 6 Studio outside those. Please [open an issue](https://github.com/Liiift-Studio/sanity-typeface-fields/issues) if you hit a version-specific problem.
+v3 – v6 support is established by the single `sanity` peer range, green builds, and the [Vitest suite](#testing) covering `createStateField`. Beyond that, these fields are in use in **three in-house Studios**. They have **not** been broadly tested in a running Sanity 6 Studio outside those. Please [open an issue](https://github.com/over-punch/sanity-typeface-fields/issues) if you hit a version-specific problem.
 
 ### Packaging
 
