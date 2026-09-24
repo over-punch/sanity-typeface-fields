@@ -1,7 +1,7 @@
 # sanity-typeface-fields
 
-[![npm version](https://img.shields.io/npm/v/@liiift-studio/sanity-typeface-fields.svg)](https://www.npmjs.com/package/@liiift-studio/sanity-typeface-fields)
-[![license: MIT](https://img.shields.io/npm/l/@liiift-studio/sanity-typeface-fields.svg)](#license)
+[![npm version](https://img.shields.io/npm/v/@overpunch/sanity-typeface-fields.svg)](https://www.npmjs.com/package/@overpunch/sanity-typeface-fields)
+[![license: MIT](https://img.shields.io/npm/l/@overpunch/sanity-typeface-fields.svg)](#license)
 [![sanity: v3 – v6](https://img.shields.io/badge/sanity-v3%20%E2%80%93%20v6-f03e2f.svg)](#compatibility)
 
 Standalone Sanity field definitions for typeface documents. Import individual fields and drop them into any schema group — no opinion about document structure.
@@ -18,7 +18,7 @@ flowchart LR
 		DOC["defineType('typeface')\ndocument"]
 	end
 
-	subgraph PKG["@liiift-studio/sanity-typeface-fields"]
+	subgraph PKG["@overpunch/sanity-typeface-fields"]
 		direction TB
 		subgraph OBJ["Plain field objects — spread directly"]
 			F1["classificationField → classification (string)"]
@@ -47,7 +47,7 @@ flowchart LR
 ## Install
 
 ```bash
-npm install @liiift-studio/sanity-typeface-fields
+npm install @overpunch/sanity-typeface-fields
 ```
 
 ## Usage
@@ -70,7 +70,7 @@ import {
 	metadataField,
 	languagesField,
 	languagesNoteField,
-} from '@liiift-studio/sanity-typeface-fields'
+} from '@overpunch/sanity-typeface-fields'
 
 export const typefaceSchema = defineType({
 	name: 'typeface',
@@ -178,7 +178,7 @@ The generated field is `name: 'specimen'`, `type: 'object'`, containing `initial
 `languagesField` and `languagesNoteField` are a deliberate pair: one is **generated**, one is **hand-written**, and keeping them separate means regenerating the detected list can never clobber editorial copy.
 
 ```typescript
-import { languagesField, languagesNoteField } from '@liiift-studio/sanity-typeface-fields'
+import { languagesField, languagesNoteField } from '@overpunch/sanity-typeface-fields'
 
 // fields: [ ..., languagesField, languagesNoteField ]
 ```
@@ -209,7 +209,7 @@ Supports **Sanity Studio v3, v4, v5 and v6** from a single build.
 
 ### Why this package needs no compatibility shim
 
-Sibling packages in this suite (`sanity-key-value-input`, `sanity-nested-object-selector`, `sanity-advanced-reference-array`) depend on [`@liiift-studio/sanity-ui-compat`](https://www.npmjs.com/package/@liiift-studio/sanity-ui-compat) to survive two breaking changes:
+Sibling packages in this suite (`sanity-key-value-input`, `sanity-nested-object-selector`, `sanity-advanced-reference-array`) depend on [`@overpunch/sanity-ui-compat`](https://www.npmjs.com/package/@overpunch/sanity-ui-compat) to survive two breaking changes:
 
 - **`@sanity/ui` v4** moved `Tooltip`, `Menu`, `MenuButton`, `MenuItem`, `Code`, `Popover`, `Autocomplete`, `Toast` and `useToast` to subpath entries.
 - **`@sanity/icons` v5** removed every named `*Icon` export.
