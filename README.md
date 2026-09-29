@@ -237,4 +237,4 @@ npm test
 
 ## License
 
-MIT © [Quinn Keaveney](https://liiift.studio)
+MIT © [Quinn Keaveney](https://overpunch.ca)
